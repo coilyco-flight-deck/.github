@@ -1,0 +1,7 @@
+# Per-repo command allowlist. No dev verbs - present so ward's repocfg loader
+# recognizes the repo and resolves its agent workflow.
+
+commands: {}
+
+agent:
+  workflow: merge-remote-main
