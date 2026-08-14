@@ -1,3 +1,7 @@
+---
+ward:
+  workflow: merge-remote-main
+---
 # Agent instructions
 
 This repository owns the `coilyco-flight-deck` organization profile and shared

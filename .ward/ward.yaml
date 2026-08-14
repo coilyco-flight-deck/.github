@@ -3,5 +3,3 @@
 
 commands: {}
 
-agent:
-  workflow: merge-remote-main
