@@ -42,8 +42,8 @@ the repository that owns it.
 
 ## Commands
 
-No dev verbs. [`.ward/ward.yaml`](.ward/ward.yaml) is present so ward's repocfg
-loader recognizes the repo and resolves its agent workflow.
+No dev verbs, so this repo ships no justfile. [`.ward/ward.yaml`](.ward/ward.yaml)
+is present so ward's repocfg loader recognizes the repo.
 
 ## Validation
 
