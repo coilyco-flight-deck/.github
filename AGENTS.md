@@ -24,3 +24,53 @@ from a task-scoped temporary clone, and remove that clone once the work lands.
 
 A temporary root can be purged at any time, so commit and push before pausing,
 switching tasks, or ending a session. The remote is the only durable artifact.
+
+## Scope
+
+The public organization profile and shared review metadata for `coilyco-flight-deck`.
+Nothing else belongs here.
+
+## Project shape
+
+`profile/README.md` is the landing page both forges render.
+`.github/CODEOWNERS` and `.forgejo/CODEOWNERS` carry equivalent review ownership.
+
+## Repo boundaries
+
+Organization presentation and review defaults only. Project work belongs in
+the repository that owns it.
+
+## Commands
+
+No dev verbs. [`.ward/ward.yaml`](.ward/ward.yaml) is present so ward's repocfg
+loader recognizes the repo and resolves its agent workflow.
+
+## Validation
+
+Run `pre-commit run --all-files` before committing. The catalog suite is
+consumed by upstream ref and never forked.
+
+## Safety
+
+Everything here is public. Keep opaque ids, host identifiers, and credentials
+out of the tree.
+
+## Cross-repo contracts
+
+The catalog pre-commit hooks are authored in agentic-os and consumed here by
+upstream rev. Canonical development happens on Forgejo.
+
+## Release
+
+Commit directly to `main` and push to canonical Forgejo.
+
+## Agent rules
+
+Use she/her for Kai. No em dashes, italics, or semicolons in prose. Name the
+actor in every action sentence.
+
+## See also
+
+- [README.md](README.md) - what this repository is.
+- [docs/FEATURES.md](docs/FEATURES.md) - what it provides.
+- [.ward/ward.yaml](.ward/ward.yaml) - catalog metadata.

@@ -3,3 +3,6 @@
 
 commands: {}
 
+catalog:
+  description: "Organization profile and shared review metadata for coilyco-flight-deck: the landing page both forges render, plus equivalent CODEOWNERS for Forgejo and GitHub."
+  dependsOn: []
