@@ -4,14 +4,13 @@ ward:
 ---
 # Agent instructions
 
-This repository owns the `coilyco-flight-deck` organization profile and shared
-review metadata.
+This repository owns the `coilyco-flight-deck` organization profile.
 
 ## Boundaries
 
 * Edit `profile/README.md` for the public organization landing page.
-* Keep the GitHub and Forgejo CODEOWNERS files aligned unless a platform
-  requires a deliberate syntax difference.
+* Do not reintroduce CODEOWNERS. Kai dropped both files on purpose in
+  `7c2d31f`, because agents read a review request as a merge gate.
 * Keep all profile and documentation content public-safe.
 * Regenerate the repository pointer skill through agentic-os. Do not hand-edit
   its generated `SKILL.md`.
@@ -27,18 +26,18 @@ switching tasks, or ending a session. The remote is the only durable artifact.
 
 ## Scope
 
-The public organization profile and shared review metadata for `coilyco-flight-deck`.
-Nothing else belongs here.
+The public organization profile for `coilyco-flight-deck`. Nothing else
+belongs here.
 
 ## Project shape
 
-`profile/README.md` is the landing page both forges render.
-`.github/CODEOWNERS` and `.forgejo/CODEOWNERS` carry equivalent review ownership.
+`profile/README.md` is the landing page both forges render, and it is the only
+published artifact in the tree.
 
 ## Repo boundaries
 
-Organization presentation and review defaults only. Project work belongs in
-the repository that owns it.
+Organization presentation only. Project work belongs in the repository that
+owns it.
 
 ## Commands
 
