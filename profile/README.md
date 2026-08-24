@@ -8,18 +8,21 @@ call.
 ## Projects
 
 - **[agent-compose](https://github.com/coilyco-flight-deck/agent-compose)** -
-  selects roles, personalities, skills, and tool inventories, then emits an
-  inspectable bundle. No executable authority rides along. Installs as
-  `acompose`, and Claude Code, Codex, Goose, and OpenCode share the grammar.
+  eval driven agent roles and personas. A role is context, never permission:
+  the composed bundle is plain files you can read and diff before a run, and it
+  grants no credential, mount, or command. Installs as `acompose`, and Claude
+  Code, Codex, Goose, and OpenCode take the same one.
 - **[umbra](https://github.com/coilyco-flight-deck/umbra)** - a config driven
-  occlusion framework that puts explicit boundaries around CLIs and APIs. It
-  validates argv before `execve`, checks a scope token per verb, and appends
-  every call to a rotating audit log. Its `specgen` driver turns a KDL policy
-  into a standalone guarded CLI with no hand-written Go.
-- **[mcp-beaver](https://github.com/coilyco-flight-deck/mcp-beaver)** - renders
-  a guardfile into a guarded MCP server and HTTP tool API. One generic runtime,
-  many guardfiles, and an undeclared operation has no handler at all. Ships as
-  an image plus a Helm chart, so deploying one is a values file.
+  occlusion framework. Declare what a tool may run, and arguments are validated
+  before the process starts, each verb needs its own scope token, and every
+  call lands in an append-only audit log. Its `specgen` driver builds the whole
+  guarded CLI from that declaration, so there is no hand-written boundary code
+  to get wrong.
+- **[mcp-beaver](https://github.com/coilyco-flight-deck/mcp-beaver)** - a MCP
+  server generator with a natural flow. An operation you did not declare has no
+  tool and no endpoint, so the blast radius of a write-capable MCP is one small
+  file you can read end to end. One generic image serves every guardfile,
+  mounted at deploy rather than baked in.
 
 A fourth, [sirens-echo](https://github.com/coilyco-gaming/sirens-echo), lives
 over in [coilyco-gaming](https://github.com/coilyco-gaming).
