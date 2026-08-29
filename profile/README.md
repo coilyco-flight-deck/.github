@@ -1,6 +1,6 @@
 # coilyco-flight-deck
 
-Open-source agent tooling by [Kai Siren](https://coilysiren.me). The recurring
+Open-source agent tooling by [Kai Ase Siren](https://coilysiren.me). The recurring
 problem across these projects is that an agent is only as safe as the surface
 you hand it, so the surface gets declared in a config file and enforced at the
 call.
