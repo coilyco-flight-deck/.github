@@ -12,6 +12,12 @@ call.
   the composed bundle is plain files you can read and diff before a run, and it
   grants no credential, mount, or command. Installs as `acompose`, and Claude
   Code, Codex, Goose, and OpenCode take the same one.
+- **[housecast](https://forgejo.coilysiren.me/coilyco-flight-deck/housecast)** -
+  a YAML driven roster framework for agent context. One roster declares the
+  roles, personalities, and boundaries, the engine emits an immutable bundle,
+  and the behavior evals run against that same bundle, so the graded artifact
+  and the shipped artifact are identical. `acompose` renders what housecast
+  emits. On Forgejo only for now.
 - **[umbra](https://github.com/coilyco-flight-deck/umbra)** - a config driven
   occlusion framework. Declare what a tool may run, and arguments are validated
   before the process starts, each verb needs its own scope token, and every
@@ -24,13 +30,14 @@ call.
   file you can read end to end. One generic image serves every guardfile,
   mounted at deploy rather than baked in.
 
-A fourth, [sirens-echo](https://github.com/coilyco-gaming/sirens-echo), lives
-over in [coilyco-gaming](https://github.com/coilyco-gaming).
+[sirens-echo](https://github.com/coilyco-gaming/sirens-echo), the Discord
+community harness built on this stack, lives over in
+[coilyco-gaming](https://github.com/coilyco-gaming).
 
 ## Install
 
-`agent-compose`, `specgen`, `ward`, and `aos` install from a Forgejo-hosted tap
-or bucket, so the URL is spelled out once.
+`agent-compose`, `specgen`, and `aos` install from a Forgejo-hosted tap or
+bucket, so the URL is spelled out once.
 
 ```sh
 brew tap coilyco-flight-deck/tap https://forgejo.coilysiren.me/coilyco-flight-deck/homebrew-tap
@@ -60,9 +67,9 @@ refuses to do.
 
 ## Also here
 
-- [ward](https://github.com/coilyco-flight-deck/ward) - governed execution
-  layer for coding agents. Runs agent work in isolated containers and records
-  an audit trail.
+- [ward](https://github.com/coilyco-flight-deck/ward) - archived. The governed
+  execution layer for coding agents that preceded this stack, kept for its
+  record rather than deleted.
 - [agentic-os](https://github.com/coilyco-flight-deck/agentic-os) - the host
   layer the rest of this runs on: shell and terminal configuration, the `aos`
   launcher, and the `aos-precommit` hook suite. A reference implementation
