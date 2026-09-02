@@ -60,16 +60,15 @@ refuses to do.
   authenticated Bluesky, with no write tool at all.
 - [node-stats-mcp](https://github.com/coilyco-flight-deck/node-stats-mcp) -
   node-local Linux and Kubernetes diagnostics.
-- [reddit-mcp](https://github.com/coilyco-flight-deck/reddit-mcp) - private
-  Reddit feeds and public subreddit RSS.
 - [lunch-money-k8s](https://github.com/coilyco-flight-deck/lunch-money-k8s) -
   the Lunch Money API, with a Helm chart.
 
 ## Also here
 
-- [ward](https://github.com/coilyco-flight-deck/ward) - archived. The governed
-  execution layer for coding agents that preceded this stack, kept for its
-  record rather than deleted.
+- [ward](https://github.com/coilyco-flight-deck/ward) - retired. The governed
+  execution layer for coding agents that preceded this stack.
+- [reddit-mcp](https://github.com/coilyco-flight-deck/reddit-mcp) - retired.
+  Private Reddit feeds and public subreddit RSS.
 - [agentic-os](https://github.com/coilyco-flight-deck/agentic-os) - the host
   layer the rest of this runs on: shell and terminal configuration, the `aos`
   launcher, and the `aos-precommit` hook suite. A reference implementation
@@ -83,7 +82,8 @@ refuses to do.
   [scoop-bucket](https://github.com/coilyco-flight-deck/scoop-bucket) - the
   distribution channels, bumped by each upstream release.
 
-Earlier experiments are archived rather than deleted. The
+Retired work is archived here and removed from Forgejo, so GitHub carries the
+record. The
 [full repository list](https://github.com/orgs/coilyco-flight-deck/repositories)
 has them.
 
