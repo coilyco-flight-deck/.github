@@ -77,8 +77,8 @@ refuses to do.
 - [agent-proxy](https://github.com/coilyco-flight-deck/agent-proxy) -
   observability and trajectory data plane for agent work. In active transition,
   so its interfaces are unstable.
-- [infrastructure](https://github.com/coilyco-flight-deck/infrastructure) -
-  Ansible convergence and k3s manifests for the homelab.
+- [website](https://github.com/coilyco-flight-deck/website) - the source for
+  coilysiren.me, the personal site and technical blog.
 - [homebrew-tap](https://github.com/coilyco-flight-deck/homebrew-tap) and
   [scoop-bucket](https://github.com/coilyco-flight-deck/scoop-bucket) - the
   distribution channels, bumped by each upstream release.
